@@ -41,6 +41,8 @@ Before diving into the setup, it's essential to visualize our lab environment. U
 - Shuffle
 - And more, depending on the complexity of your setup.
 
+![Project Diagram](images/SOCDiagram.png)
+
 Documenting your project architecture is vital for understanding and communicating the setup effectively.
 
 ## Step 2: Setting Up the Windows 10 Client
