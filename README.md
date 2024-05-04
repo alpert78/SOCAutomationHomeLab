@@ -53,6 +53,8 @@ We begin by setting up a Windows 10 virtual machine in VirtualBox, which will ac
 
 Utilizing a cloud platform like DigitalOcean, we deploy a Droplet running Ubuntu to serve as our Wazuh server. We configure firewall rules to restrict inbound traffic and ensure security. SSH access is established to the server for further setup.
 
+![Firewall Rules Diagram](images/Firewall.png)
+
 ## Step 4: Installing Wazuh
 
 Once connected to the Wazuh server, we install Wazuh using a curl command from their official site. After installation, we access the Wazuh web interface using the provided credentials and the Droplet's IP address.
@@ -81,9 +83,13 @@ We download and configure Mimikatz, a tool commonly used by red teams. Configura
 
 New rules are added to Wazuh to detect Mimikatz usage. Alerts are triggered, providing visibility into potential security threats.
 
+![Mimikatz Event Detected in Wazuh](images/MimiktzEventDetectedWazuh.png)
+
 ## Step 11: Implementing Shuffle for Orchestration
 
 Shuffle is introduced to orchestrate our SOC workflow. It forwards alerts to TheHive and notifies analysts via email for further analysis.
+
+![TheHive Alert](images/TheHiveAlert.png)
 
 ## Step 12: Enhancing Detection with VirusTotal
 
@@ -97,6 +103,8 @@ Users and organizations are set up in TheHive to facilitate collaboration and in
 
 Our workflow is finalized, ensuring that alerts from Shuffle are reported in TheHive, and analysts are promptly notified via email.
 
+![Shuffle Workflow Diagram](images/shuffleWorkflow.png)
+
 By following these steps, we've successfully created a simulated SOC environment capable of detecting and responding to security incidents effectively. This hands-on lab provides valuable experience in cybersecurity incident response and the utilization of SOC tools and workflows.
 
-Lab idea from [MyDFIR on YouTube](https://www.youtube.com/channel/UCvL7G9dtQRvzCOi4HYx3Xgg).
+Lab idea from [MyDFIR on YouTube]
